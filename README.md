@@ -1,81 +1,79 @@
 # -website
 Projeto  website
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Meu Projeto Web</title>
+  <title>Meu Projeto com Menu</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f9f9f9;
-      color: #333;
-  
-    h1 {
-      color: #0077cc;
+      margin: 0;
+      padding: 0;
     }
-    ul, ol {
-      padding-left: 20px;
-    
-    a {
-      color: #d14;
+
+    nav {
+      background-color: #0077cc;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
       text-decoration: none;
-    
-    a:hover {
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
       text-decoration: underline;
     }
-    mark {
-      background-color: #fffb91;
-    
-    blockquote {
-      border-left: 4px solid #ccc;
-      padding-left: 10px;
-      font-style: italic;
-      color: #666;
-    
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 20px 0;
-    
+
+    main {
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Bem-vindo ao Meu Site</h1>
-  <h2>Sobre Mim</h2>
-  <p>Olá! Sou <strong>Sandy</strong> e este é meu projeto de <mark>HTML + CSS</mark>.</p>
-  <p><small>Criado com carinho e muita dedicação.</small></p>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
-  <h3>Habilidades</h3>
-  <ul>
-    <li><i>HTML</i></li>
-    <li><u>CSS</u></li>
-    <li><strong>JavaScript</strong></li>
-  </ul>
+  <main>
+    <h1 id="sobre">Bem-vindo ao Meu Site</h1>
+    <p>Informações sobre mim...</p>
 
-  <h4>Projetos</h4>
-  <ol>
-    <li>Site Pessoal</li>
-    <li>Blog</li>
-    <li><del>App Mobile (em desenvolvimento)</del></li>
-  </ol>
+    <h2 id="habilidades">Minhas Habilidades</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
 
-  <hr>
+    <h2 id="projetos">Projetos</h2>
+    <ol>
+      <li>Site Pessoal</li>
+      <li>Blog</li>
+    </ol>
 
-  <h5>Contato</h5>
-  <p>Fale comigo via <a href="mailto:sandy@exemplo.com">e-mail</a>.</p>
-
-  <h6>Curiosidade</h6>
-  <p>Fórmula da água: H<sub>2</sub>O. Fórmula da potência elétrica: P = V<sup>2</sup>/R.</p>
-
-  <blockquote>
-    "A persistência realiza o impossível." – Provérbio Japonês
-  </blockquote>
-
-  <p><font color="purple">Este texto usa a tag <code>&lt;font&gt;</code> como exemplo educacional.</font></p>
-
-  <p><abbr title="HyperText Markup Language">HTML</abbr> é a linguagem base da web.</p>
+    <h2 id="contato">Contato</h2>
+    <p>Email: sandy@exemplo.com</p>
+  </main>
 
 </body>
 </html>
